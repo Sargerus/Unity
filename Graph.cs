@@ -110,8 +110,8 @@ public class Graph
                         candidates.Add(new Edge(currentIndex, currentIndex + 1, Edge.Direction.E, true));
 
                     //check bottom
-                    if (i != mazeRows-1 && maze[(i+1) * mazeRows + j] == 0)
-                        candidates.Add(new Edge(currentIndex, (i + 1) * mazeRows + j, Edge.Direction.S, true));
+                    if (i != mazeRows-1 && maze[(i+1) * mazeColumns + j] == 0)
+                        candidates.Add(new Edge(currentIndex, (i + 1) * mazeColumns + j, Edge.Direction.S, true));
 
                     //check left
                     if (firstInRowIndex != currentIndex && maze[currentIndex - 1] == 0)
