@@ -98,7 +98,7 @@ public class Graph
         {
             for(int j = 0; j< mazeColumns; j++)
             {
-                int currentIndex = i * mazeRows + j;
+                int currentIndex = i * mazeColumns + j;
                 if (maze[currentIndex] == 0)
                 {
                     mazeCells.Add(currentIndex, cellCoord[currentIndex]);
